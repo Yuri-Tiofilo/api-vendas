@@ -8,4 +8,5 @@ import providerRouter from '../../modules/providers/routes/provider.routes'
 routes.use('/products', productRouter)
 routes.use('/providers', providerRouter)
 
-export default routes
+export default routes;
+ 

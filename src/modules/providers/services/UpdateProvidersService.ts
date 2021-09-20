@@ -13,7 +13,7 @@ interface IRequest {
 }
 
 class UpdateProviderService {
-    public async execute({id, name, email, cnpj, cpf, company_name}: IRequest): Promise<Provider>{
+    public async execute({ id, name, email, cnpj, cpf, company_name }: IRequest): Promise<Provider>{
         let providerRepository = getCustomRepository(ProviderRepository);
         let provider = await providerRepository.findOne(id)
         if (!provider){
